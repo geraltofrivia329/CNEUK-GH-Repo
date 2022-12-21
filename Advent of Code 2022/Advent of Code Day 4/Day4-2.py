@@ -1,6 +1,3 @@
-# Day 4 pairs. 2-4 = 234 and 6-8 = 678
-# In How many assignment pairs does one range fully contain the other?
-
 x = open(r"C:\Users\cneukuckatz\OneDrive - ISACA\Documents\CNEUK GH Repo\Advent of Code 2022\Advent of Code Day 4\Day4.txt", "r").read().splitlines()
 
 
@@ -15,9 +12,8 @@ for i in x:
     bb, bbb = [int(r) for r in b.split("-")]
 
 
-    if (aa <= bb and aaa >= bbb ) or (bb<=aa and bbb>=aaa):
-        t+=1
+if bbb >= aa >= bb or aaa >= bb >= aa:t+=1
+    
 
 
 print(t)
-     
